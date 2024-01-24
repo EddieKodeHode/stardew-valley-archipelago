@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDV randomizer tracker</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <main>
+        <header>
+            <h1>SDV Randomizer Tracker</h1>
+            <p>Manual tracker for archipelago randomizer runs</p>
+        </header>
+        <div>
+            <!-- checklist for unlocks to remember -->
+            <div class="flex space-between top">
+                <div class="seasons center top-line">
+                    <h3>Seasons</h3>
+                    <div>
+                        <ul class="flex space-between">
+                            <li onclick="toggleClass(this)"><span class="center-li">Spring</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Summer</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Fall</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Winter</span></li>
+                    </div>
+                </div>
+                <div class="travelingmerchant center top-line">
+                    <h3>Traveling Merchant</h3>
+                    <div>
+                        <ul class="flex space-between">
+                            <li onclick="toggleClass(this)"><span class="center-li">Monday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Tuesday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Wednesday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Thursday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Friday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Saturday</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Sunday</span></li>
+                    </div>
+                </div>
+                <div class="bundlerewards center top-line">
+                    <h3>Bundle rewards</h3>
+                    <div>
+                        <ul class="flex space-between">
+                            <li onclick="toggleClass(this)"><span class="center-li">Greenhouse</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Quarry</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Boulder</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Bus</span></li>
+                            <li onclick="toggleClass(this)"><span class="center-li">Minecart</span></li>
+                    </div>
+                </div>
+            </div>
+            <!-- checklist for completed checks -->
+            <div class="main-box flex wrap space-between">
+                <div class="box">
+                    <h3>No unlocks required</h3>
+                    <ul>
+                        <li onclick="toggleClass(this)"><span class="center-li">Bridge repair (300 wood)</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Meet Willy</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Meet Marlon</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Meet Wizard</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Spring foraging bundle</span></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Pierre</h3>
+                    <ul>
+                        <li onclick="toggleClass(this)"><span class="center-li">Backpack upgrade (2000 gold)</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Backpack upgrade (10 000 gold)</span></li>
+                    </ul>
+                    <h3>Willy</h3>
+                    <ul>
+                        <li onclick="toggleClass(this)"><span class="center-li">Fishingrod (25 gold) (fishing level 0)</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Fishingrod (500 gold) (fishing level 0)</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Fishingrod (1 800 gold) (fishing level 2)</span></li>
+                        <li onclick="toggleClass(this)"><span class="center-li">Fishingrod (7 500 gold) (fishing level 6)</span></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Robin</h3>
+                    <ul>
+                        <li onclick="toggleClass(this)"><span class="center-li">TBA</span></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Clint</h3>
+                    <ul>
+                        <li onclick="toggleClass(this)"><span class="center-li">TBA</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.ts"></script>
+  </body>
+</html>
