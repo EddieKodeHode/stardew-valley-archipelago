@@ -117,10 +117,43 @@ textarea {
     margin: 1em;
 }
 
+.box:has(input[type="checkbox"]) {
+    /* Trying to recreate a <ul> */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .active-check {
     list-style-image: url('img/checklistOn.png');
     text-decoration: line-through;
 }
+
+label input[type="checkbox"] {
+    /* The actual checkbox gets hidden... */
+    display: none;
+}
+
+label:has(input[type="checkbox"]) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+
+    /* ... so we can put custom images into a :before instead */
+
+    &:before {
+        content: "";
+        width: 33px; height: 33px;
+        display: inline-block;
+        background: url('img/checklistOff.png');
+    }
+
+    &:has(input[type="checkbox"]:checked) {
+        text-decoration: line-through;
+        &:before { background: url('img/checklistOn.png') }
+    }
+}
+
 
 .center-li {
     top:-0.5em;
